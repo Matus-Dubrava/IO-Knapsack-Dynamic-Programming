@@ -1,7 +1,7 @@
 const sum = (x, y) => x + y;
 const sumArray = arr => arr.reduce(sum, 0);
 
-// memoize only with respect to the first two arguments - toPay, bills
+// memoize only with respect to the first two arguments - space, items
 // the other two are not necessary in this case
 const memoizeFirstTwoArgs = fn => {
   const cache = new Map();
